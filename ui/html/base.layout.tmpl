@@ -1,0 +1,24 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>{{template "title" .}} - Aimol </title>
+    </head>
+    
+    <body>
+        <header>
+            <h1><a href='/'>Aimol</a></h1>
+        </header>
+        <nav>
+            <a href='/'>Home page</a>
+        </nav>
+        
+        <main>
+            {{template "main" .}}
+        </main>
+        <!-- Вызываем шаблон подвала -->
+        {{template "footer" .}}
+    </body>
+</html>
+{{end}}
